@@ -1,0 +1,60 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "NotoSans";
+    url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap')}
+/*Project: Ejercicio Diseño
+Version: 1.0
+Last Change: 02/11/2022
+Assigned to: Mario Cantero Shimizu
+
+[TABLA DE CONTENIDOS]
+
+1.Nav
+2.Universal classes
+3.Mobile
+
+
+[CODIGOS DE COLOR]
+
+Color Green: #008000
+Color Black: #000000
+Color Blue: #48cae4
+
+[FUENTES Y TIPOFRAFIAS]
+'Noto Sans', sans-serif
+
+*/
+
+/*2.Universal classes */
+
+h1{
+    color: #008000;
+    font-family: 'Noto Sans', sans-serif;
+}
+h2{
+    color: #008000;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/*1.Nav */
+
+li::after{
+    content: "🔽";
+}
+a{
+    color: #000000;
+}
+a:visited{
+    color: #48cae4;
+}
+/*3.Mobile*/
+
+.mobile{
+
+    visibility: hidden;}
+
+    @media only screen
+    and (max-width: 480px){
+        .mobile{visibility: visible}
+    }
+

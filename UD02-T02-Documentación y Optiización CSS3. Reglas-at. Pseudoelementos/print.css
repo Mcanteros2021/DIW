@@ -1,0 +1,28 @@
+@charset "UTF-8";
+@import "style.css";
+@import "mobile.css";
+/*Project: Ejercicio Diseño
+Version: 1.0
+Last Change: 02/11/2022
+Assigned to: Mario Cantero Shimizu
+
+[TABLA DE CONTENIDOS]
+
+1.Nav
+2.
+
+
+[CODIGOS DE COLOR]
+
+Color Blue: #48cae4
+
+*/
+
+
+h1{
+    color: #48cae4;
+
+}
+h2{
+    color: #48cae4;
+}
