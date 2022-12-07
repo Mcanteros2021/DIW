@@ -13,8 +13,21 @@
 </head>
 <body id="mainContainer">
 
+    <video autoplay muted loop id="myVideo">
+        <source src="./img/gato1_LhkZKm23.mp4" type="video/mp4">
+      </video>
+
+      <div id="content"class="content">
+        <h1>Gato Negro corriendo</h1>
+        <p>Este es mi animación de gato, mira como corre mi gato.</p>
+        <button id="myBtn" onclick="playPause()">Pause</button>
+        <button id="myBtn" onclick="exit()">Exit</button>
+      </div>
+
+      
+
 <header id="headerMain">
-    <img id="logo" src="./img/logo.png">
+    <img id="logo" src="./img/logo.svg">
     <h1 id="titulo">RUNNING HAMSTER WOJAK</h1>
     <h2>Corre como si no huviera un mañana pero en grupo y con muchos memes</h2>
 </header>
@@ -36,33 +49,43 @@
 
     <section id="flexSection">
 
-        <article class="article1">
-            <header><h1>JUAN CONSIGUE UNA MARCA EXCEPCIONAL</h1></header>
-            <section>Juan que bueno eres corriendo que máquina,genio figura crack mastodonte ídolo champion 
-                monstro referente maquina artista elemento jefe fiera maestro socio golfo héroe 
-                tanque fenómeno gacela tigre bestia titán animal gigante prenda semental coloso 
-                hacha mostrenco campeón killer ciclón pieza brontosaurio vikingo vividor. </section>
-            <section>De verdad como corre Juan además super rápido.</section>
-            <footer>¿ Te ha parecido interesante este post ? Dejanos tu opinión en los comentarios</footer>
-        </article>
-        <article class="article1">
-            <header><h1>MONDONGO CONSIGUE UNA MARCA EXCEPCIONAL</h1></header>
-            <section>Mondongo que bueno eres corriendo que máquina,genio figura crack mastodonte
-                 ídolo champion monstro referente maquina artista elemento jefe fiera maestro 
-                 socio golfo héroe tanque fenómeno gacela tigre bestia titán animal gigante 
-                 prenda semental coloso hacha mostrenco campeón killer ciclón pieza brontosaurio
-                  vikingo vividor. </section>
-            <section>De verdad como corre Mondongo además super rápido.</section>
-            <footer>¿ Te ha parecido interesante este post ? Dejanos tu opinión en los comentarios</footer>
-        </article>
+        <div class="section">
+            <article class="article1">
+                <header><h1>JUAN CONSIGUE UNA MARCA EXCEPCIONAL</h1></header>
+                <section>Juan que bueno eres corriendo que máquina,genio figura crack mastodonte ídolo champion 
+                    monstro referente maquina artista elemento jefe fiera maestro socio golfo héroe 
+                    tanque fenómeno gacela tigre bestia titán animal gigante prenda semental coloso 
+                    hacha mostrenco campeón killer ciclón pieza brontosaurio vikingo vividor. </section>
+                <section>De verdad como corre Juan además super rápido.</section>
+                <footer>¿ Te ha parecido interesante este post ? Dejanos tu opinión en los comentarios</footer>
+            </article>
+            <img class="sectionImage" alt="Imagen libre de uso y edición" src="./img/man-1838991__340.jpg">
 
+        </div>
+        <div class="section">
+            <article class="article1">
+                <header><h1>MONDONGO CONSIGUE UNA MARCA EXCEPCIONAL</h1></header>
+                <section>Mondongo que bueno eres corriendo que máquina,genio figura crack mastodonte
+                     ídolo champion monstro referente maquina artista elemento jefe fiera maestro 
+                     socio golfo héroe tanque fenómeno gacela tigre bestia titán animal gigante 
+                     prenda semental coloso hacha mostrenco campeón killer ciclón pieza brontosaurio
+                      vikingo vividor. </section>
+                <section>De verdad como corre Mondongo además super rápido.</section>
+                
+                <footer>¿ Te ha parecido interesante este post ? Dejanos tu opinión en los comentarios</footer>
+                
+            </article>
+            <img class="sectionImage" alt="Imagen libre de uso y edición" src="./img/woman-498257__340.jpg">
+        </div>
+       
+       
     </section>
 
    
 
     <div id="asideContainer">
-        <h3>¿ NECESITAS MOTIVACIÓN ?</h3>
-        <aside><img class="asideImage" src="./img/motivacionWojack.jpg"></aside>
+        <h3>CONSIGUE UN DESCUENTO DE 30% SOLO EN DICIEMBRE</h3>
+        <aside><img class="asideImage" src="./img/741.png"></aside>
         <h3>¿ QUIERES MÁS PUNTOS PARA EL RANKING ?</h3>
         <aside><img class="asideImage" src="./img/wojackCorriendoPuntos.jpg"></aside>
     </div>
@@ -76,7 +99,7 @@
            <img id="iconos" src="./img/instagram.png" >
            <img id="iconos" src="./img/forocoches.png" >
            <img id="iconos" src="./img/reddit.png" >
-           <img id="iconos" src="./img/twitter.png" >
+           <a id="iconos"href="https://commons.wikimedia.org/wiki/File:Hummingbird.jpg"><img id="iconoCC" src="./img/twitter.jpg" alt="From Wikimedia Commons, the free media repository" ></a>
         </div>
 
 
@@ -84,4 +107,35 @@
 
 
 </body>
+
+<script>
+    // Elemento video
+    var video = document.getElementById("myVideo");
+    
+    // Elemento boton
+    var btn = document.getElementById("myBtn");
+
+    // Elemento content
+
+    var content = document.getElementById("content")
+    
+    // El pause and play de video
+    function playPause() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+
+    function exit(){
+        
+        video.style.setProperty('visibility','hidden')
+        content.style.setProperty('visibility','hidden')
+
+
+    }
+    </script>
 </html>
