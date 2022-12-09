@@ -30,6 +30,7 @@ html{
 
     font-family: 'Noto Sans', sans-serif;
     font-size: 0.8vw;
+    
 }
 
 h3{
@@ -42,6 +43,7 @@ h3{
     width: 99%;
     height: 99%;
     display: grid;
+    overflow: hidden;
     
 }
 
@@ -102,11 +104,37 @@ h3{
 
 }
 
+.fa-solid{
+
+    height: 100%;
+    width: 100%;
+    color: black;
+
+
+}
+.fa-registered{
+
+    
+    color: aquamarine;
+}
+
+.fa-right-to-bracket{
+
+    color: lightblue;
+
+}
+
 #navMain a{
     
+    width: 10%;
+    height: 10%;
     text-decoration: none;
     color: palegoldenrod;
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 1%;
 
 
 }
@@ -120,7 +148,7 @@ h3{
 
 }
 
-#navMain a:nth-child(5){
+#botones a:nth-child(1){
 
     text-decoration: none;
     color: aquamarine;
@@ -133,6 +161,7 @@ h3{
     margin-left: 10%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
 }
 
@@ -230,7 +259,7 @@ aside{
 /* 4. Footer */
 
 #mainFooter{
-
+    visibility: hidden;
     grid-row: 4;
     grid-column: 1/12;
    
@@ -281,6 +310,8 @@ h4{
     min-width: 100%;
     min-height: 100%;
   }
+
+  /* Multimedia */
   
   .content {
     position: fixed;
@@ -305,6 +336,9 @@ h4{
     background: #ddd;
     color: black;
   }
+
+  
+/* Media Query */
 
 @media  (max-width: 667px) and (min-width:375px) and  (orientation : portrait) {
 

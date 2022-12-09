@@ -9,22 +9,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,300;0,400;1,400&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+
     <title>LayoutResponsive</title>
 </head>
 
 <body id="mainContainer">
 
     <video autoplay muted loop id="myVideo">
-        <source src="./img/gato1_LhkZKm23.mp4" type="video/mp4">
+        <source src="./img/download_WAktbuhC.mp4" type="video/mp4">
       </video>
 
       <div id="content"class="content">
-        <h1>Gato Negro corriendo</h1>
-        <p>Este es mi animación de gato, mira como corre mi gato.</p>
-        <button id="myBtn" onclick="playPause()">Pause</button>
-        <button id="myBtn" onclick="exit()">Exit</button>
+        <h1>Bienvenido a mi página</h1>
+        <p>Pulse salir para entrar en la página </p>
+        <button id="myBtn" onclick="playPause()">Pausar</button>
+        <button id="myBtn" onclick="exit()">Salir</button>
       </div>
-
       
 
 <header id="headerMain">
@@ -34,21 +35,38 @@
 
         <h1 id="titulo">RUNNING HAMSTER WOJAK</h1>
         <h2>Corre como si no huviera un mañana pero en grupo y con muchos memes</h2>
-
+        
     </div>
     
 </header>
 
 <nav id="navMain">
-
-    <a href="/">COMPRAR</a>
-    <a href="/">PARTICIPAR</a>
-    <a href="/">CONTACTO</a>
-    <a href="/">RANKING</a>
+    <a href="/">
+        <div><i class="fa-solid fa-cart-shopping"></i></div>
+        <p>COMPRAR</p>
+    </a>
+    <a href="/">
+        <div><i class="fa-solid fa-list-check"></i></div>
+        <p>PARTICIPAR</p>
+    </a>
+    <a href="/">
+        <div><i class="fa-solid fa-phone"></i></div>
+        <p>CONTACTAR</p>
+    </a>
+    <a href="/">
+        <div><i class="fa-solid fa-person-running"></i></div>
+        <p>RANKING</p>
+    </a>
 
     <div id="botones">
-        <a href="/">REGISTER</a>
-        <a href="/">LOGIN</a>
+        <a href="/">
+            <div><i class="fa-solid fa-registered"></i></div>
+            <p>REGISTRAR</p>
+        </a>
+        <a href="/">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            <p>LOGUEAR</p>
+        </a>
     </div>
    
     
@@ -128,15 +146,23 @@
 </body>
 
 <script>
-    // Elemento video
+    // Elemento video //
     var video = document.getElementById("myVideo");
     
-    // Elemento boton
+    // Elemento boton//
     var btn = document.getElementById("myBtn");
 
-    // Elemento content
+    // Elemento content //
 
     var content = document.getElementById("content")
+
+    // Elemento Footer //
+
+    var footer = document.getElementById("mainFooter")
+
+     // Elemento Container //
+
+     var main = document.getElementById("mainContainer")
     
     // El pause and play de video
     function playPause() {
@@ -153,7 +179,8 @@
         
         video.style.setProperty('visibility','hidden')
         content.style.setProperty('visibility','hidden')
-
+        footer.style.setProperty('visibility','visible')
+        main.style.setProperty('overflow','visible')
 
     }
     </script>
