@@ -83,178 +83,18 @@ h3{
 }
 
 #logo{
-    margin-left: 5%;
-    margin-right: 17%;
-    width: 8%;
-    height: 60%;
+
+    width: 50%;
+    height: 40%;
 }
 
 
 
 /* 2. Nav */
 
-#navMain{
-
-    grid-row: 2;
-    grid-column: 1/12;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #9BA17B;
-
-}
-
-.fa-solid{
-
-    height: 100%;
-    width: 100%;
-    color: black;
-
-
-}
-.fa-registered{
-
-    
-    color: aquamarine;
-}
-
-.fa-right-to-bracket{
-
-    color: lightblue;
-
-}
-
-#navMain a{
-    
-    width: 10%;
-    height: 10%;
-    text-decoration: none;
-    color: palegoldenrod;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    margin-top: 1%;
-
-
-}
-
-#navMain a:last-child{
-
-    text-decoration: none;
-    color: lightblue;
-    margin-left: 10%;
-
-
-}
-
-#botones a:nth-child(1){
-
-    text-decoration: none;
-    color: aquamarine;
-
-
-}
-
-#botones{
-
-    margin-left: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
 
 /*3.Contenido: Section y Contenedor de Aside*/
 
-
-#midContainer{
-    
-    grid-row: 3;
-    grid-column: 1/12;
-    display: flex;
-    justify-content: space-between;
-    background-color: #CFB997;
-}
-
-#flexSection{
-
-    height: 100%;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-
-}
-
-.article1{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-
-
-}
-
-
-#asideContainer{
-
-    height: 100%;
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-
-}
-
-aside{
-
-    width: 80%;
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.asideImage{
-
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap:wrap;
-   
-
-    
-
-}
-
-.asideImage img{
-
-    width: 50%;
-    height: 50%;
-    
-}
-
-.section{
-
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
-
-}
-.sectionImage{
-
-    height: 100%;
-    width: 30%;
-
-}
 
 /* 4. Footer */
 

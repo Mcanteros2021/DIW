@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="layoutResponsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,300;0,400;1,400&display=swap" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
@@ -14,9 +16,9 @@
     <title>LayoutResponsive</title>
 </head>
 
-<body id="mainContainer">
+<body>
 
-    <video autoplay muted loop id="myVideo">
+    <!-- <video autoplay muted loop id="myVideo">
         <source src="./img/download_WAktbuhC.mp4" type="video/mp4">
       </video>
 
@@ -26,108 +28,118 @@
         <button id="myBtn" onclick="playPause()">Pausar</button>
         <button id="myBtn" onclick="exit()">Salir</button>
       </div>
-      
+       -->
 
-<header id="headerMain">
-    <img id="logo" src="./img/logo.svg">
+<header class="container-fluid">
+    <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-2 d-flex justify-content-center align-items-center">
+            <img id="logo" src="./img/logo.svg">
+        </div>
+        <div class="col-lg-6 d-flex justify-content-center align-items-center"> 
+            <h1 id="titulo">RUNNING HAMSTER WOJAK</h1>
+        </div>
+       
+      </div>
+ 
 
-    <div id="titleContainer">
-
-        <h1 id="titulo">RUNNING HAMSTER WOJAK</h1>
-        <h2>Corre como si no huviera un mañana pero en grupo y con muchos memes</h2>
-        
-    </div>
-    
 </header>
 
-<nav id="navMain">
-    <a href="/">
-        <div><i class="fa-solid fa-cart-shopping"></i></div>
-        <p>COMPRAR</p>
-    </a>
-    <a href="/">
-        <div><i class="fa-solid fa-list-check"></i></div>
-        <p>PARTICIPAR</p>
-    </a>
-    <a href="/">
-        <div><i class="fa-solid fa-phone"></i></div>
-        <p>CONTACTAR</p>
-    </a>
-    <a href="/">
-        <div><i class="fa-solid fa-person-running"></i></div>
-        <p>RANKING</p>
-    </a>
-
-    <div id="botones">
-        <a href="/">
-            <div><i class="fa-solid fa-registered"></i></div>
-            <p>REGISTRAR</p>
-        </a>
-        <a href="/">
-            <i class="fa-solid fa-right-to-bracket"></i>
-            <p>LOGUEAR</p>
-        </a>
+<nav class="navbar navbar-expand">
+    <div class="container d-flex justify-content-center">
+      <a class="navbar-brand" href="#">Crear nueva entrada &nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+        <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+      </svg></a>
     </div>
-   
+    <div class="container d-flex justify-content-center">
+      <ul class="navbar-nav d-flex justify-content-between">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Registro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Entradas</a>
+        </li>
+      </ul>
+    </div>
+       
+        
+  
+      <div class="container d-flex justify-content-center ">
+        <button role="button" data-bs-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1" class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+      </div>
+      <div class="container-fluid  d-flex justify-content-evenly">
+      <div role="button" data-bs-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1"  id="collapse1" class="collapse">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+        </svg>
+      </div>
+      <div id="collapse1" class="collapse">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+      </div>
+      </div>
+          
+        
+          
+        </form>
+        
     
-
-
-</nav>
-
-<div id="midContainer">
-
-    <section id="flexSection">
-
-        <div class="section">
-            <article class="article1">
-                <header><h1>JUAN CONSIGUE UNA MARCA EXCEPCIONAL</h1></header>
-                <section>Juan que bueno eres corriendo que máquina,genio figura crack mastodonte ídolo champion 
-                    monstro referente maquina artista elemento jefe fiera maestro socio golfo héroe 
-                    tanque fenómeno gacela tigre bestia titán animal gigante prenda semental coloso 
-                    hacha mostrenco campeón killer ciclón pieza brontosaurio vikingo vividor. </section>
-                <section>De verdad como corre Juan además super rápido.</section>
-                <footer>¿ Te ha parecido interesante este post ? Dejanos tu opinión en los comentarios</footer>
-            </article>
-            <img class="sectionImage" alt="Imagen libre de uso y edición" src="./img/man-1838991__340.jpg">
-
-        </div>
-        <div class="section">
-            <article class="article1">
-                <header><h1>MONDONGO CONSIGUE UNA MARCA EXCEPCIONAL</h1></header>
-                <section>Mondongo que bueno eres corriendo que máquina,genio figura crack mastodonte
-                     ídolo champion monstro referente maquina artista elemento jefe fiera maestro 
-                     socio golfo héroe tanque fenómeno gacela tigre bestia titán animal gigante 
-                     prenda semental coloso hacha mostrenco campeón killer ciclón pieza brontosaurio
-                      vikingo vividor. </section>
-                <section>De verdad como corre Mondongo además super rápido.</section>
-                
-                <footer>¿ Te ha parecido interesante este post ? Dejanos tu opinión en los comentarios</footer>
-                
-            </article>
-            <img class="sectionImage" alt="Imagen libre de uso y edición" src="./img/woman-498257__340.jpg">
-        </div>
-       
-       
-    </section>
-
    
+  </nav>
 
-    <div id="asideContainer">
-        <h3>CONSIGUE UN DESCUENTO DE 30% EN:</h3>
-        <aside>
-            <div class="asideImage">
-                <img  src="./img/741.png">
-                <img  src="./img/2129nov.jpg">
-                <img  src="./img/guauBanner.png">
-                <img  src="./img/pp,504x498-pad,600x600,f8f8f8.u4.jpg">
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-9">
+
+            <div class="section">
+                <article class="article1">
+                    <header><h1>JUAN CONSIGUE UNA MARCA EXCEPCIONAL</h1></header>
+                    <section>Juan que bueno eres corriendo que máquina,genio figura crack mastodonte ídolo champion 
+                        monstro referente maquina artista elemento jefe fiera maestro socio golfo héroe 
+                        tanque fenómeno gacela tigre bestia titán animal gigante prenda semental coloso 
+                        hacha mostrenco campeón killer ciclón pieza brontosaurio vikingo vividor. </section>
+                    <section>De verdad como corre Juan además super rápido.</section>
+                    <footer>¿ Te ha parecido interesante este post ? Dejanos tu opinión en los comentarios</footer>
+                </article>
+                <img class="sectionImage" alt="Imagen libre de uso y edición" src="./img/man-1838991__340.jpg">
+    
             </div>
+            <div class="section">
+                <article class="article1">
+                    <header><h1>MONDONGO CONSIGUE UNA MARCA EXCEPCIONAL</h1></header>
+                    <section>Mondongo que bueno eres corriendo que máquina,genio figura crack mastodonte
+                         ídolo champion monstro referente maquina artista elemento jefe fiera maestro 
+                         socio golfo héroe tanque fenómeno gacela tigre bestia titán animal gigante 
+                         prenda semental coloso hacha mostrenco campeón killer ciclón pieza brontosaurio
+                          vikingo vividor. </section>
+                    <section>De verdad como corre Mondongo además super rápido.</section>
+                    
+                    <footer>¿ Te ha parecido interesante este post ? Dejanos tu opinión en los comentarios</footer>
+                    
+                </article>
+                <img class="sectionImage" alt="Imagen libre de uso y edición" src="./img/woman-498257__340.jpg">
+            </div>
+           
+           
+        </div>
+    
+    
+        <div class="col-3">
+          <div class="container d-flex flex-wrap ">
             
-        </aside>
-        <h3>¿ QUIERES MÁS PUNTOS PARA EL RANKING ?</h3>
-        <aside><img class="asideImage" src="./img/wojackCorriendoPuntos.jpg"></aside>
-    </div>
+              <img class="img-fluid"  src="./img/741.png">
+              <img class="img-fluid" src="./img/2129nov.jpg">
+              <img class="img-fluid" src="./img/guauBanner.png">
+              <img class="img-fluid" src="./img/pp,504x498-pad,600x600,f8f8f8.u4.jpg">
 
-</div>
+          </div>
+        </div>
 
     <footer id="mainFooter">
         <h4>Siguenos en redes</h4>
