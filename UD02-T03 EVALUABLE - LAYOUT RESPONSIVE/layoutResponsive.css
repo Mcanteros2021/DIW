@@ -48,44 +48,22 @@ h3{
 }
 
 
+
+
 /* 1.Header */
 
 
-#headerMain{
-
-    grid-row: 1;
-    grid-column: 1/12;
-    display: flex;
-    flex-direction: row;
-    background-color: #61764B;
-    align-items: center;
-    justify-content: flex-start;
-
-}
-
-#titleContainer{
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-
-}
-
 #titulo{
-    
-    text-align: center;
-    background-color: white;
-    width: 100%;
+
+
     font-size: 2.1vw;
     font-style: italic;
-    margin-right: 40%;
-
-
 }
 
 #logo{
 
-    width: 50%;
-    height: 40%;
+    width: 10%;
+    height: 10%;
 }
 
 
@@ -95,61 +73,28 @@ h3{
 
 /*3.Contenido: Section y Contenedor de Aside*/
 
+.carousel-control-next{
+    color: black;
+    background-color: black;
+}
+.carousel-control-prev-icon{
+    color: black;
+    background-color: black;
+}
+.carousel-control-next-icon{
+    color: black;
+    background-color: black;
+}
+.sr-only{
+    color: black;
+    background-color: black;
+}
+
+
 
 /* 4. Footer */
 
-#mainFooter{
-    visibility: hidden;
-    grid-row: 4;
-    grid-column: 1/12;
-   
-    background-color: #FAD6A5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0;
-    font-size: 100%;
 
-
-}
-
-#iconosContainer{
-
-    width: 100%;
-    height: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-
-}
-h4{
-    margin: 0;
-    padding: 0;
-    margin-block-end: 0;
-    margin-block-start: 0;
-}
-
-#iconos{
-    filter: brightness(1.1);
-    mix-blend-mode: multiply;
-    width: 4%;
-    height: 65%;
-
-
-}
-#iconoCC{
-    height: 100%;
-    width: 100%;
-}
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-  }
 
   /* Multimedia */
   
@@ -178,19 +123,3 @@ h4{
   }
 
   
-/* Media Query */
-
-@media  (max-width: 667px) and (min-width:375px) and  (orientation : portrait) {
-
-    #midContainer{
-
-
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-
-
-}
