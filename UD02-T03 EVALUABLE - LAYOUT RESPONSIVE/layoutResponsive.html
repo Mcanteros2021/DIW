@@ -16,7 +16,7 @@
     <title>Layout Responsive</title>
 </head>
 
-<body class="container-fluid">
+<body >
 
     <!-- <video autoplay muted loop id="myVideo">
         <source src="./img/download_WAktbuhC.mp4" type="video/mp4">
@@ -29,106 +29,224 @@
         <button id="myBtn" onclick="exit()">Salir</button>
       </div>
        -->
-<header>
-        <div class="container d-flex align-items-center justify-content-evenly"> 
-          <img id="logo" src="./img/logo.svg">
-          <h1 id="titulo">RUNNING HAMSTER WOJAK</h1>
-          <img id="logo" src="./img/logo.svg">
-    </div>
-
-</header>
-
-<nav class="navbar navbar-expand">
-    <div class="container d-flex justify-content-center">
-      <a class="navbar-brand" href="#">Crear nueva entrada &nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
-        <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
-      </svg></a>
-    </div>
-    <div class="container d-flex justify-content-between">
-     
-          <a class="nav-link" href="#">Login</a>
-          
-          <a class="nav-link" href="#">Registro</a>
-        
-          <a class="nav-link" href="#">Entradas</a>
-      
-    </div>
-       
-        
-      <div class="container d-flex justify-content-center ">
-        <button role="button" data-bs-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1" class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-        </svg>
-      </div>
-      <div class="container-fluid  d-flex justify-content-evenly">
-        <div role="button" data-bs-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1"  id="collapse1" class="collapse">
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-          </svg>
-        </div>
-          <div id="collapse1" class="collapse">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-          </div>
-      </div>
-          
-   
-  </nav>
-
 
 <div class="container-fluid">
+  <header>
+    <div class="container d-flex align-items-center justify-content-evenly"> 
+      <img id="logo" src="./img/logo.svg">
+      <h1 id="titulo">RUNNING HAMSTER WOJAK</h1>
+      <img id="logo" src="./img/logo.svg">
+    </div>
+  </header>
 
-    <div class="row d-flex justify-content-around ">
+  <nav class="navbar navbar-expand bg-secondary">
+  <div class="container d-flex justify-content-center">
+    <a class="navbar-brand" href="#">Crear nueva entrada &nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+      <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+    </svg></a>
+  </div>
+  <div class="container d-flex justify-content-between">
+  
+        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#ModalForm">Login</a>
+        
+        <a class="nav-link" href="#">Registro</a>
+      
+        <a class="nav-link" href="#">Entradas</a>
+    
+  </div>          
+    <div class="container d-flex justify-content-center ">
+      <button role="button" data-bs-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1" class="btn btn-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+      </svg>
+    </div>
+    <div class="container-fluid  d-flex justify-content-evenly">
+      <div role="button" data-bs-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1"  id="collapse1" class="collapse">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+        </svg>
+      </div>
+        <div id="collapse1" class="collapse">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+        </div>
+    </div>
+  </nav>
+</div>
+
+
+
+  <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="myform bg-dark">
+                <h1 class="text-center">LOGIN</h1>
+                <form>
+                    <div class="mb-3 mt-4">
+                        <label for="exampleInputEmail1" class="form-label">Usuario</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>               
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Mantener la sesión abierta
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-light mt-3">Entrar</button>
+                    <p>¿ Se te olvidó la contraseña ? <a href="#">Resetear contraseña</a></p>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="container">
+
+    <div class="row d-flex justify-content-around">
 
         <div class="d-flex-column justify-content-center gy-5 col-8">
 
-            <div class="d-flex justify-content-around align-items-center p-3 ">
-                <article class=" container justify-content-center align-items-center">
-                    <h1 class="text-center">JUAN CONSIGUE UNA MARCA EXCEPCIONAL</h1>
-                    <section><br>Juan que bueno eres corriendo que máquina,genio figura crack mastodonte ídolo champion 
-                        monstro referente maquina artista elemento jefe fiera maestro socio golfo héroe 
-                        tanque fenómeno gacela tigre bestia titán animal gigante prenda semental coloso 
-                        hacha mostrenco campeón killer ciclón pieza brontosaurio vikingo vividor. </section>
-                    <section><br>De verdad como corre Juan además super rápido.</section>
-                    <footer><br>¿ Te ha parecido interesante este post ? Dejanos tu opinión en los comentarios</footer>
-                </article>
-                <img class="img-fluid alt="Imagen libre de uso y edición" src="./img/man-1838991__340.jpg">
-    
-            </div>
-            <div class="d-flex justify-content-center align-items-center p-3">
-                <article class="container d-flex-column ">
-                    <h1 class="text-center">MONDONGO CONSIGUE UNA MARCA EXCEPCIONAL</h1>
-                    <section><br>Mondongo que bueno eres corriendo que máquina,genio figura crack mastodonte
-                         ídolo champion monstro referente maquina artista elemento jefe fiera maestro 
-                         socio golfo héroe tanque fenómeno gacela tigre bestia titán animal gigante 
-                         prenda semental coloso hacha mostrenco campeón killer ciclón pieza brontosaurio
-                          vikingo vividor. </section>
-                    <section><br>De verdad como corre Mondongo además super rápido.</section>
-                    
-                    <footer><br>¿ Te ha parecido interesante este post ? Dejanos tu opinión en los comentarios</footer>
-                    
-                </article>
-                <img  class="img-fluid" alt="Imagen libre de uso y edición" src="./img/woman-498257__340.jpg">
+          <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Entradas</li>
+            </ol>
+          </nav>
+
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+            </ul>
+          </nav>
+
+
+          <div class="d-flex flex-wrap justify-content-between">
+
+            <div class="card p-3" style="width: 18rem;">
+              <img src="./img/running-10-claves-para-correr-actualmente.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
             </div>
 
-            <div class="d-flex justify-content-around align-items-center p-3">
-              <article class="d-flex-column justify-content-center align-items-center">
-                  <h1 class="text-center">JUAN CONSIGUE UNA MARCA EXCEPCIONAL</h1>
-                  <section><br>Juan que bueno eres corriendo que máquina,genio figura crack mastodonte ídolo champion 
-                      monstro referente maquina artista elemento jefe fiera maestro socio golfo héroe 
-                      tanque fenómeno gacela tigre bestia titán animal gigante prenda semental coloso 
-                      hacha mostrenco campeón killer ciclón pieza brontosaurio vikingo vividor. </section>
-                  <section><br>De verdad como corre Juan además super rápido.</section>
-                  <footer><br>¿ Te ha parecido interesante este post ? Dejanos tu opinión en los comentarios</footer>
-              </article>
-              <img class="img-fluid"  alt="Imagen libre de uso y edición" src="./img/man-1838991__340.jpg">
-  
+            <div class="card p-3" style="width: 18rem;">
+              <img src="./img/running-10-claves-para-correr-actualmente.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+
+            <div class="card p-3" style="width: 18rem;">
+              <img src="./img/running-10-claves-para-correr-actualmente.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+
+            <div class="card p-3" style="width: 18rem;">
+              <img src="./img/running-10-claves-para-correr-actualmente.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+
+            <div class="card p-3" style="width: 18rem;">
+              <img src="./img/running-10-claves-para-correr-actualmente.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+
+            <div class="card p-3" style="width: 18rem;">
+              <img src="./img/running-10-claves-para-correr-actualmente.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+            
+
+            
+
+          
           </div>
+          
+           
         </div>
     
     
-        <div class="col-3 d-flex-column align-items-center w-100" >
+        <div class="h-100 col-4 d-flex-column gy-5 " >
           
-          <div class="container d-flex flex-wrap">
+          <div class="h-35 d-flex flex-wrap p-5">
             
               <img width="50%" height="50%" src="./img/741.png">
               <img width="50%" height="50%" src="./img/2129nov.jpg">
@@ -139,8 +257,8 @@
 
          
 
-          <div class="container">
-            <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+    
+            <div id="carouselExampleControls" class="h-35 carousel slide" data-bs-ride="carousel p-5">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="./img/741.png"  class="d-block w-100 h-100" alt="...">
@@ -161,9 +279,13 @@
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-          </div>
+         
+          <div class="align-self-end h-30 p-3">
 
-          <div class="container d-flex justify-content-between align-self-end">
+            <h4 class=" text-center">Conocenos en nuestras redes sociales</h4>
+
+          </div>  
+          <div class="d-flex justify-content-between ">
             <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
               <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
             </svg>
@@ -187,13 +309,84 @@
     
 </div>  
 
-  <div>
+  <div class="container-fluid ">
+    <footer class="bg-light text-center text-lg-start ">
+      <div class="container p-4  ">
+        <div class="row ">         
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
+            <h5 class="text-uppercase">Dirección:</h5>
+            <h5>C/Juan Ramón Jiménez nº18</h5>
+          </div>
 
-
-
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0">Categorías</h5>
+    
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-dark">Noticias</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Eventos</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Pro-tips</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Dieta</a>
+              </li>
+            </ul>
+          </div>
+         
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Secciones</h5>
+    
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-dark">Login</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Registro</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Entradas</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Crear Entrada</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0">Etiquetas</h5>
+    
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-dark">#love</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">#photography</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">#fashion</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">#photooftheday</a>
+              </li>
+            </ul>
+          </div>
+         
+        </div>
+        
+      </div>
+      
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/">RunningHamsterWojack.com</a>
+      </div>
+    
+    </footer>
     
   </div>
-
 
 </body>
 
