@@ -1,19 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="layoutResponsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,300;0,400;1,400&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
-    <title>Document</title>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,300;0,400;1,400&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+
+    <title>Register</title>
 </head>
-<body class="container-fluid">
+
+<body>
 
     <!-- <video autoplay muted loop id="myVideo">
         <source src="./img/download_WAktbuhC.mp4" type="video/mp4">
@@ -26,295 +29,194 @@
         <button id="myBtn" onclick="exit()">Salir</button>
       </div>
        -->
-<header>
-        <div class="container d-flex align-items-center justify-content-evenly"> 
-          <img id="logo" src="./img/logo.svg">
-          <h1 id="titulo">RUNNING HAMSTER WOJAK</h1>
-          <img id="logo" src="./img/logo.svg">
-    </div>
 
-</header>
-
-<div class="modal fade bg-dark" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-body">
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-          <div class="myform bg-dark">
-              <h1 class="text-center">LOGIN</h1>
-              <form>
-                  <div class="mb-3 mt-4">
-                      <label for="exampleInputEmail1" class="form-label">Usuario</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                      
-                  </div>               
-                  <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Mantener la sesión abierta
-                    </label>
-                  </div>
-                  <button type="submit" class="btn btn-light mt-3">Entrar</button>
-                  <p>¿ Se te olvidó la contraseña ? <a href="#">Resetear contraseña</a></p>
-              </form>
-          </div>
-      </div>
+<!--
+    Header y nav
+-->
+<div class="container-fluid">
+  <header>
+    <div class="container d-flex align-items-center justify-content-evenly"> 
+      <img id="logo" src="./img/logo.svg">
+      <h1 class="display-1" id="titulo">RUNNING HAMSTER WOJAK</h1>
+      <img id="logo" src="./img/logo.svg">
     </div>
+  </header>
+
+  <nav class="navbar navbar-expand bg-secondary">
+  <div class="container d-flex justify-content-center">
+    <a class="navbar-brand" href="#">Crear nueva entrada &nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+      <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+    </svg></a>
   </div>
+  <div class="container d-flex justify-content-between">
+  
+        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#ModalForm"><button type="button" class="btn btn-secondary btn-lg">Login</button></a>
+        
+        <a class="nav-link"><button type="button" class="btn btn-secondary btn-lg">Registro</button></a>
+      
+        <a href="./layoutResponsive.html" class="nav-link"><button type="button" class="btn btn-secondary btn-lg">Entradas</button></a>
+    
+  </div>          
+    <div class="container d-flex justify-content-center ">
+      <button role="button" data-bs-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1" class="btn btn-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+      </svg>
+    </div>
+    <div class="container-fluid  d-flex justify-content-evenly">
+      <div role="button" data-bs-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1"  id="collapse1" class="collapse">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+        </svg>
+      </div>
+        <div id="collapse1" class="collapse">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+        </div>
+    </div>
+  </nav>
 </div>
 
 
-<nav class="navbar navbar-expand">
-    <div class="container d-flex justify-content-center">
-      <a class="navbar-brand" href="#">Crear nueva entrada &nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
-        <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
-      </svg></a>
-    </div>
-    <div class="container d-flex justify-content-between">
-     
 
-          <a class="nav-link" data-bs-toggle="modal" data-bs-target="#ModalForm">Login</a>
-          
-          <a class="nav-link" href="#">Registro</a>
-        
-          <a class="nav-link" href="#">Entradas</a>
-      
-    </div>
-       
-        
-      <div class="container d-flex justify-content-center ">
-        <button role="button" data-bs-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1" class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-        </svg>
-      </div>
-      <div class="container-fluid  d-flex justify-content-evenly">
-        <div role="button" data-bs-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1"  id="collapse1" class="collapse">
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-          </svg>
+  <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="myform bg-dark">
+                <h1 class="text-center">LOGIN</h1>
+                <form>
+                    <div class="mb-3 mt-4">
+                        <label for="exampleInputEmail1" class="form-label">Usuario<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                          </svg></label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>               
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Contraseña <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                            <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"/>
+                            <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                          </svg></label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Mantener la sesión abierta
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-light mt-3">Entrar</button>
+                    <p>¿ Se te olvidó la contraseña ? <a href="#">Resetear contraseña</a></p>
+                </form>
+            </div>
         </div>
-          <div id="collapse1" class="collapse">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-          </div>
       </div>
-          
-   
-  </nav>
+    </div>
+  </div>
+
+<!--
+    Columna principal y banner
+-->
+
 
 
 <div class="container-fluid">
 
-    <div class="row d-flex justify-content-around ">
+  <div class="row d-flex justify-content-around ">
 
-        <div class="d-flex-column justify-content-center gy-5 col-8">
+      <div class="d-flex-column justify-content-center gy-5 col-8">
 
-          <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Registro</li>
-            </ol>
-          </nav>
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Registro</li>
+          </ol>
+        </nav>
 
-          <section class="h-100">
-            <div class="container py-5 h-100">
-              <div class="row d-flex justify-content-center align-items-center h-100">
-                <div class="col">
-                  <div class="card card-registration my-4">
-                    <div class="row g-0">
-                      <div class="col-xl-6 d-none d-xl-block">
-                        <img src=""
-                          alt="Sample photo" class="img-fluid"
-                          style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
-                      </div>
-                      <div class="col-xl-6">
-                        <div class="card-body p-md-5 text-black">
-                          <h3 class="mb-5 text-uppercase">Student registration form</h3>
-          
-                          <div class="row">
-                            <div class="col-md-6 mb-4">
-                              <div class="form-outline">
-                                <input type="text" id="form3Example1m" class="form-control form-control-lg" />
-                                <label class="form-label" for="form3Example1m">First name</label>
-                              </div>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                              <div class="form-outline">
-                                <input type="text" id="form3Example1n" class="form-control form-control-lg" />
-                                <label class="form-label" for="form3Example1n">Last name</label>
-                              </div>
+        <section class="h-100">
+          <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+              <div class="col">
+                <div class="card card-registration my-4">
+                  <div class="row g-0">
+                    <div class="col-xl-6 d-none d-xl-block">
+                      <img src="./img/758410.jpg"
+                        alt="Sample photo" class="img-fluid"
+                        style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+                    </div>
+                    <div class="col-xl-6">
+                      <div class="card-body p-md-5 text-black">
+                        <h3 class="mb-5 text-uppercase">Registro de Usuario</h3>
+        
+                        <div class="row">
+                          <div class="col-md-6 mb-4">
+                            <div class="form-outline">
+                              <input type="text" id="form3Example1m" class="form-control form-control-lg" />
+                              <label class="form-label" for="form3Example1m">Nombre *</label>
                             </div>
                           </div>
-          
-                          <div class="row">
-                            <div class="col-md-6 mb-4">
-                              <div class="form-outline">
-                                <input type="text" id="form3Example1m1" class="form-control form-control-lg" />
-                                <label class="form-label" for="form3Example1m1">Mother's name</label>
-                              </div>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                              <div class="form-outline">
-                                <input type="text" id="form3Example1n1" class="form-control form-control-lg" />
-                                <label class="form-label" for="form3Example1n1">Father's name</label>
-                              </div>
+                          <div class="col-md-6 mb-4">
+                            <div class="form-outline">
+                              <input type="text" id="form3Example1n" class="form-control form-control-lg" />
+                              <label class="form-label" for="form3Example1n">Apellidos *</label>
                             </div>
                           </div>
-          
-                          <div class="form-outline mb-4">
-                            <input type="text" id="form3Example8" class="form-control form-control-lg" />
-                            <label class="form-label" for="form3Example8">Address</label>
-                          </div>
-          
-                          <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
-          
-                            <h6 class="mb-0 me-4">Gender: </h6>
-          
-                            <div class="form-check form-check-inline mb-0 me-4">
-                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
-                                value="option1" />
-                              <label class="form-check-label" for="femaleGender">Female</label>
-                            </div>
-          
-                            <div class="form-check form-check-inline mb-0 me-4">
-                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
-                                value="option2" />
-                              <label class="form-check-label" for="maleGender">Male</label>
-                            </div>
-          
-                            <div class="form-check form-check-inline mb-0">
-                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
-                                value="option3" />
-                              <label class="form-check-label" for="otherGender">Other</label>
-                            </div>
-          
-                          </div>
-          
-                          <div class="row">
-                            <div class="col-md-6 mb-4">
-          
-                              <select class="select">
-                                <option value="1">State</option>
-                                <option value="2">Option 1</option>
-                                <option value="3">Option 2</option>
-                                <option value="4">Option 3</option>
-                              </select>
-          
-                            </div>
-                            <div class="col-md-6 mb-4">
-          
-                              <select class="select">
-                                <option value="1">City</option>
-                                <option value="2">Option 1</option>
-                                <option value="3">Option 2</option>
-                                <option value="4">Option 3</option>
-                              </select>
-          
-                            </div>
-                          </div>
-          
-                          <div class="form-outline mb-4">
-                            <input type="text" id="form3Example9" class="form-control form-control-lg" />
-                            <label class="form-label" for="form3Example9">DOB</label>
-                          </div>
-          
-                          <div class="form-outline mb-4">
-                            <input type="text" id="form3Example90" class="form-control form-control-lg" />
-                            <label class="form-label" for="form3Example90">Pincode</label>
-                          </div>
-          
-                          <div class="form-outline mb-4">
-                            <input type="text" id="form3Example99" class="form-control form-control-lg" />
-                            <label class="form-label" for="form3Example99">Course</label>
-                          </div>
-          
-                          <div class="form-outline mb-4">
-                            <input type="text" id="form3Example97" class="form-control form-control-lg" />
-                            <label class="form-label" for="form3Example97">Email ID</label>
-                          </div>
-          
-                          <div class="d-flex justify-content-end pt-3">
-                            <button type="button" class="btn btn-light btn-lg">Reset all</button>
-                            <button type="button" class="btn btn-warning btn-lg ms-2">Submit form</button>
-                          </div>
-          
                         </div>
+        
+                        <div class="row">
+                          <div class="col-md-6 mb-4">
+                            <div class="form-outline">
+                              <input type="text" id="form3Example1m1" class="form-control form-control-lg" />
+                              <label class="form-label" for="form3Example1m1">Ciudad</label>
+                            </div>
+                          </div>
+                          <div class="col-md-6 mb-4">
+                            <div class="form-outline">
+                              <input type="text" id="form3Example1n1" class="form-control form-control-lg" />
+                              <label class="form-label" for="form3Example1n1">Provincia</label>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="form-outline mb-4">
+                          <input type="text" id="form3Example8" class="form-control form-control-lg" />
+                          <label class="form-label" for="form3Example8">Email *</label>
+                        </div>
+        
+                        <div class="form-outline mb-4">
+                          <div class="form-outline">
+                            <input type="text" id="form3Example1n1" class="form-control form-control-lg" />
+                            <label class="form-label" for="form3Example1n1">Código Postal</label>
+                          </div>
+                          <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+                           Código Postal
+                          </button>
+                        </div>
+        
+                        <div class="form-outline mb-4">
+                          <input type="text" id="form3Example90" class="form-control form-control-lg" />
+                          <label class="form-label" for="form3Example90">Comunidad Autónoma</label>
+                        </div>
+        
+                        <div class="form-floating">
+                          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                          <label for="floatingTextarea">Pequeña descripción</label>
+                        </div>
+        
+                        <div class="d-flex justify-content-end pt-3">
+                          <button type="button" class="btn btn-light btn-lg">Cancelar</button>
+                          <button type="button" class="btn btn-warning btn-lg ms-2">Enviar</button>
+                        </div>
+        
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-        </div>
-    
-        <div class="h-100 col-3 d-flex-column gy-5 " >
-          
-          <div class="h-35 d-flex flex-wrap p-5">
-            
-              <img width="50%" height="50%" src="./img/741.png">
-              <img width="50%" height="50%" src="./img/2129nov.jpg">
-              <img width="50%" height="50%" src="./img/guauBanner.png">
-              <img width="50%" height="50%" src="./img/pp,504x498-pad,600x600,f8f8f8.u4.jpg">
-
           </div>
+        </section>
 
-         
-
-    
-            <div id="carouselExampleControls" class="h-35 carousel slide" data-bs-ride="carousel p-5">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="./img/741.png"  class="d-block w-100 h-100" alt="...">
-                </div>
-                <div class="carousel-item ">
-                  <img src="./img/guauBanner.png"  class="d-block w-100 h-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="./img/pp,504x498-pad,600x600,f8f8f8.u4.jpg"   class="d-block w-100 h-100" alt="...">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-         
-          <div class="align-self-end h-30 p-3">
-
-            <h4 class=" text-center">Conocenos en nuestras redes sociales</h4>
-
-          </div>  
-          <div class="d-flex justify-content-between ">
-            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-              <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-meta" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M8.217 5.243C9.145 3.988 10.171 3 11.483 3 13.96 3 16 6.153 16.001 9.907c0 2.29-.986 3.725-2.757 3.725-1.543 0-2.395-.866-3.924-3.424l-.667-1.123-.118-.197a54.944 54.944 0 0 0-.53-.877l-1.178 2.08c-1.673 2.925-2.615 3.541-3.923 3.541C1.086 13.632 0 12.217 0 9.973 0 6.388 1.995 3 4.598 3c.319 0 .625.039.924.122.31.086.611.22.913.407.577.359 1.154.915 1.782 1.714Zm1.516 2.224c-.252-.41-.494-.787-.727-1.133L9 6.326c.845-1.305 1.543-1.954 2.372-1.954 1.723 0 3.102 2.537 3.102 5.653 0 1.188-.39 1.877-1.195 1.877-.773 0-1.142-.51-2.61-2.87l-.937-1.565ZM4.846 4.756c.725.1 1.385.634 2.34 2.001A212.13 212.13 0 0 0 5.551 9.3c-1.357 2.126-1.826 2.603-2.581 2.603-.777 0-1.24-.682-1.24-1.9 0-2.602 1.298-5.264 2.846-5.264.091 0 .181.006.27.018Z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-            </svg>
-
-          </div>
-          
-        </div>
-    </div>
-    
-</div>  
+      </div> 
 
   <div class="container-fluid ">
     <footer class="bg-light text-center text-lg-start ">
@@ -326,7 +228,7 @@
           </div>
 
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-0">Secciones</h5>
+            <h5 class="text-uppercase mb-0">Categorías</h5>
     
             <ul class="list-unstyled">
               <li>
@@ -345,7 +247,7 @@
           </div>
          
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Navegación</h5>
+            <h5 class="text-uppercase">Secciones</h5>
     
             <ul class="list-unstyled mb-0">
               <li>
@@ -364,7 +266,7 @@
           </div>
           
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-0">Hashtags</h5>
+            <h5 class="text-uppercase mb-0">Etiquetas</h5>
     
             <ul class="list-unstyled">
               <li>
@@ -396,4 +298,44 @@
   </div>
 
 </body>
+
+<script>
+    // Elemento video //
+    var video = document.getElementById("myVideo");
+    
+    // Elemento boton//
+    var btn = document.getElementById("myBtn");
+
+    // Elemento content //
+
+    var content = document.getElementById("content")
+
+    // Elemento Footer //
+
+    var footer = document.getElementById("mainFooter")
+
+     // Elemento Container //
+
+     var main = document.getElementById("mainContainer")
+    
+    // El pause and play de video
+    function playPause() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+
+    function exit(){
+        
+        video.style.setProperty('visibility','hidden')
+        content.style.setProperty('visibility','hidden')
+        footer.style.setProperty('visibility','visible')
+        main.style.setProperty('overflow','visible')
+
+    }
+    </script>
 </html>

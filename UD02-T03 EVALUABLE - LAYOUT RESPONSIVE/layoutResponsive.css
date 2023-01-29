@@ -28,26 +28,9 @@ font-family: 'Noto Sans', sans-serif;
 
 html{
 
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 0.8vw;
-    
-}
-
-h3{
-    margin: 0;
+  font-size: 100%;
 
 }
-
-#mainContainer{
-
-    width: 99%;
-    height: 99%;
-    display: grid;
-    overflow: hidden;
-    
-}
-
-
 
 
 /* 1.Header */
@@ -67,11 +50,7 @@ h3{
 }
 
 
-
-/* 2. Nav */
-
-
-/*3.Contenido: Section y Contenedor de Aside*/
+/* 2.Contenido: Section y Contenedor de Aside*/
 
 .carousel-control-next{
     color: black;
@@ -90,13 +69,7 @@ h3{
     background-color: black;
 }
 
-
-
-/* 4. Footer */
-
-
-
-  /* 5. Ventana modal de login */
+  /* 3. Ventana modal de login */
   
   .content {
     position: fixed;
@@ -131,7 +104,7 @@ h3{
   }
   .btn-close {
     position: absolute;
-    right: 0;
+    right: 1em;
     padding: 1em;
   }
   h1 {
@@ -149,6 +122,12 @@ h3{
       max-width: 90%;
       margin: 0 auto;
     }
+    .btn-close {
+      position: absolute;
+      right: 2.5em;
+      padding: 1em;
+    }
+  
   }
   .form-control:focus {
     box-shadow: inset 0 -1px 0 #7e7e7e;
