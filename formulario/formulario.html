@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario del demonio</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        body{
+            width: 99%;
+            height: 99%;
+        }
+        form{
+            font-size:larger;
+            width: 50%;
+            height: 80%;
+
+        }
+        fieldset{
+
+            margin-top: 2%;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        label{
+            text-decoration: underline;
+            font-weight: 1000;
+
+        }
+        legend{
+
+            font-size: 25px;
+            font-weight: bolder;
+
+        }
+        button{
+            width: 10%;
+            height: 10%;
+            margin-right: 30%;
+        }
+        :focus{
+            
+            color: blue;
+            border: 1px blue;
+           
+        }
+        input:required{
+            border: 5px black
+
+        }
+        .red-input:invalid{
+            background: red;
+            color: black;
+        } .red-input:valid:valid{
+            background: green;
+            color: greenyellow;
+        }
+        :valid{
+
+
+
+        }
+        :invalid{
+
+
+        }
+        
+     
+
+
+    </style>
+</head>
+
+
+<body>
+    
+    <form>
+        <figcaption><h1>Formulario del demonio</h1></figcaption>
+    <fieldset >
+        <legend>Datos personales</legend>
+       
+            
+            <datalist id="prefijo">
+                <option value="Sr."></option>
+                <option value="Sra."></option>
+                <option value="Dr."></option>
+                <option value="Srita."></option>
+            </datalist>
+            <label title="el prefijo del rellenante" for="prefijo">Prefijo</label>
+            <input aria-required="true" autofocus  type="text" list="prefijo" id="prefijo">
+            <label title="el nombre del que rellena el formulario" for="nombre">Nombre</label>
+            <input aria-required="true" type="text" id="nombre">
+            <label title="apellido del rellenador del formulario" for="apellido">Apellido</label>
+            <input aria-required="true" type="text" id="apellido">
+            <label title="email del rellenator del form" for="email">Email</label>
+            <input aria-required="true" type="email" id="email">
+            <label title="telephone del rellentor" for="telefono">Teléfono</label>
+            <input aria-required="true" type="tel" pattern="[0-9]{9}">
+            <label  title="el cumpleaños del escribidor de la pagina" for="date">Fecha de nacimiento</label>
+            <input aria-required="true" type="date" id="date">
+            <label title="la edad del usuario" for="edad">Edad</label>
+            <input class="red-input" aria-required="true" type="number" id="edad" min="16" max="130">
+            
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Datos adicionales</legend>
+        
+            <label title="color preferido" for="color">Color Preferido</label>
+            <input type="color" id="color">
+            <label title="incio de los estudios" for="inicio">Inicio de estudios</label>
+            <input max="2022-09" type="month" id="inicio">
+            <label title="url de la pagina web" for="url">Página Web</label>
+            <input type="url" pattern="https://.*" id="url">
+            <label title="curso actual" for="curso">Curso actual</label>
+            <select id="curso">
+                <option value="2021/2022">2021/2022</option>
+                <option value="2022/2023">2022/2023</option>
+            </select>
+            <label title="nivel de satisfación" for="satisfación">Satisfación</label>
+            <input type="range" step="0.5" min="0" max="10" >
+            
+            
+
+     
+    </fieldset>
+    <fieldset aria-required="true">
+        <legend>Contraseñas</legend>
+           
+            <label title="secreto del usuario" for="contra">Contraseña Actual</label>
+            <input aria-required="true" type="password" id="contra" >
+            <label title="boton que pulsan sin leer a pesar de haber aceptado vender su alma al diablo" for="check">Comprendo la importancia de establecer contraseñas seguras</label>
+            <input aria-required="true" type="checkbox" id="check">
+            
+       
+    </fieldset>
+
+    <button type="submit">Enviar</button>
+    <button type="reset">Resetear campos</button>
+</form>
+
+</body>
+</html>

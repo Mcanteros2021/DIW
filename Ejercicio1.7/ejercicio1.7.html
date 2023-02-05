@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+            width: 99%;
+            height: 99%;
+        }
+        fieldset{
+            display: flex;
+           width: 500px;
+           margin-bottom: 10%;
+            
+        }
+        label{
+            padding-right: 5px;
+
+        }
+        #form1{
+            display: flex;
+           align-items: flex-start;
+            height: 100%;
+           flex-direction: column;
+           margin-right: 5px;
+
+        }
+        #form2{
+            display: flex;
+           align-items: flex-start;
+           flex-direction: column;
+           margin-right: 5px;
+           height: 100%;
+
+        }
+        label,input{
+
+            margin-top: 3px;
+
+        }
+        ul{
+            list-style: none;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <figcaption><h1>Reservation request</h1></figcaption>
+
+        <fieldset>
+            <div id="form1">
+                <label>Tu nombre *:</label>
+                <label>Tu correo electrónico *:</label>
+                <label>Departamento *:</label>
+                <br>
+                <br>
+                <label>Tipo de sala que desea reservar: *</label>
+                <br>
+                <br>
+                <br>
+                <br>
+                <label>Requisito extra:</label>
+                <br>
+                <br>
+                <label>Fecha de la reserva:*</label>
+                <label>Hora de la reserva:*</label>
+                
+            </div>
+            <div  id="form2">
+                
+                <input placeholder="nombre" type="text"/>
+                <input placeholder="correo electrónico" type="text"/>
+                <select  name="departamento">
+                    <option>Ventas</option>
+                    <option>Marketing</option>
+                    <option>Cocina</option>
+                </select>
+                <ul>
+                    <li><input type="radio">Tipo A</li>
+                    <li><input type="radio">Tipo B</li>
+                    <li><input type="radio">Tipo C</li> 
+                </ul>
+            <ul>
+               <li><input type="checkbox"> Caballete y bolífgrafos</li>
+               <li><input type="checkbox"> Televisión</li>
+               <li><input type="checkbox"> Café, té y agua</li>
+            </ul>
+            <input type="date">
+            <input type="time">
+            </div>
+         
+        </fieldset>
+     
+    </form>
+</body>
+</html>
