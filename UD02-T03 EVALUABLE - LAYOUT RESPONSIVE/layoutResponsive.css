@@ -36,20 +36,6 @@ html{
 /* 1.Header */
 
 
-#titulo{
-
-
-    font-size: 2.1vw;
-    font-style: italic;
-}
-
-#logo{
-
-    width: 10%;
-    height: 10%;
-}
-
-
 /* 2.Contenido: Section y Contenedor de Aside*/
 
 .carousel-control-next{

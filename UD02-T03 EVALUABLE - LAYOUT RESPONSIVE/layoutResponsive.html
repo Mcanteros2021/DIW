@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
+    <meta 
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="layoutResponsive.css">
@@ -12,6 +12,17 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,300;0,400;1,400&display=swap" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+<!-- import jquery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!--Modal JS Script -->
+<script>
+    window.onload = () => {
+        $('#onload').modal('show');
+    }
+</script>
 
     <title>Layout Responsive</title>
 </head>
@@ -19,7 +30,7 @@
 <body>
 
   <!-- Modal -->
-<div class="modal fade" id="onload" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="onload" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-fullscreen " >   
         <div class="modal-content">
             <div class="modal-header">
@@ -36,7 +47,7 @@
         </div>
 </div> 
 </div>
-  
+   -->
 
 
      
@@ -45,53 +56,53 @@
 <!--
     Header y nav
 -->
-<div class="container-fluid">
-  <header>
-    <div class="container d-flex align-items-center justify-content-evenly"> 
-      <img id="logo" src="./img/logo.svg">
-      <h1 class="display-1" id="titulo">RUNNING HAMSTER WOJAK</h1>
-      <img id="logo" src="./img/logo.svg">
-    </div>
-  </header>
 
-  <nav class="navbar navbar-expand bg-secondary">
-  <div class="container d-flex justify-content-center">
-    <a class="navbar-brand" href="#">Crear nueva entrada &nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
-      <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
-    </svg></a>
-  </div>
-  <div class="container d-flex justify-content-between">
-  
-        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#ModalForm"><button type="button" class="btn btn-secondary btn-lg">Login</button></a>
+  <nav class="navbar navbar-expand-lg bg-secondary">
+    <div class="container-fluid d-flex">
+      <div class="container text-center">
+        <h2>RUNNING HAMSTER WOJAK<img style="width: 4rem;" alt="logo de la página" src="./img/2kuffv.svg"></h2>
         
-        <a href="./registroResponsive.html" class="nav-link"><button type="button" class="btn btn-secondary btn-lg">Registro</button></a>
-      
-        <a class="nav-link"><button type="button" class="btn btn-secondary btn-lg">Entradas</button></a>
-    
-  </div>          
-    <div class="container d-flex justify-content-center ">
-      <button role="button" data-bs-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1" class="btn btn-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-      </svg>
-    </div>
-    <div class="container-fluid  d-flex justify-content-evenly">
-      <div role="button" data-bs-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1"  id="collapse1" class="collapse">
-        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-        </svg>
       </div>
-        <div id="collapse1" class="collapse">
-            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+      
+      <div class="container d-flex justify-content-center">
+        <a class="navbar-brand" href="#">Crear nueva entrada &nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+          <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+        </svg></a>
+      </div>
+      <div class="container d-flex justify-content-between">
+      
+            <a  class="btn btn-secondary btn-lg"> Login</a>
+            
+            <a href="./registroResponsive.html"  class="btn btn-secondary btn-lg">Registro</a>
+          
+            <a  class="btn btn-secondary btn-lg">Entradas</a>
+        
+      </div>          
+        
+
+        <div role="button" class="container-fluid  d-flex flex-column justify-content-evenly">
+            <button  data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample" class="btn btn-success" type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+            </button>
         </div>
-    </div>
+
+        <div data-bs-toggle="collapse"  aria-expanded="false" aria-controls="collapseExample"  id="collapseExample" class="collapse">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>              
+        </div>
+    </div> 
   </nav>
-</div>
+
 
 <!--
     Login
 -->
 
-  <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+  <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalForm" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-body">
@@ -100,13 +111,13 @@
                 <h1 class="text-center">LOGIN</h1>
                 <form>
                     <div class="mb-3 mt-4">
-                        <label for="exampleInputEmail1" class="form-label">Usuario<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <label for="usuario" class="form-label">Usuario<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
                             <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
                           </svg></label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="email" class="form-control" id="usuario" aria-describedby="usuario">
                     </div>               
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Contraseña <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                        <label for="usuario" class="form-label">Contraseña <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
                             <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"/>
                             <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
                           </svg></label>
@@ -261,16 +272,14 @@
         </div>
     
     
-        <div class="col-3 d-flex flex-column align-items-center justify-content-evenly gy-5 " >
+        
           
     <!--
         Banner
     -->    
-
+    <div class="container-fluid col d-flex flex-column align-items-center justify-content-center gy-5 " >
          
-              <img class="img-fluid" src="./img/741.png">
-        
-
+              <img class="img-fluid" src="./img/741.png" alt="banner indicando oferta del 30% en el mes de diciembre">
     
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
@@ -298,11 +307,7 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-          <div class="align-self-end p-3">
-
-            <h4 class=" text-center">Conocenos en nuestras redes sociales</h4>
-
-          </div>  
+            <h4 class="text-center">Conocenos en nuestras redes sociales</h4> 
           <div class="d-flex w-100 justify-content-between">
             <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
               <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
@@ -419,16 +424,6 @@
   </div>
 
 </body>
-<!-- import jquery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<!-- Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-<!--Modal JS Script -->
-<script type="text/javascript">
-    window.onload = () => {
-        $('#onload').modal('show');
-    }
-</script>
 
 </html>
